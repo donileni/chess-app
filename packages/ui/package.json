@@ -1,28 +1,28 @@
 {
-  "name": "@repo/ui",
-  "version": "0.0.0",
-  "exports": {
-    ".": "./index.ts",
-    "./counter": "./components/counter.ts",
-    "./header": "./components/header.ts",
-    "./setup-counter": "./utils/counter.ts"
-  },
-  "license": "MIT",
-  "scripts": {
-    "lint": "eslint \"**/*.ts\""
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@chess-app/eslint-config": "workspace:*",
-    "@chess-app/typescript-config": "workspace:*",
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.32.0",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "eslint": "^9.32.0",
-    "typescript": "5.9.2"
-  }
+    "name": "@repo/ui",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./index.ts",
+        "./counter": "./components/counter.ts",
+        "./header": "./components/header.ts",
+        "./setup-counter": "./utils/counter.ts"
+    },
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint \"**/*.ts\""
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@chess-app/eslint-config": "workspace:*",
+        "@chess-app/typescript-config": "workspace:*",
+        "@eslint/eslintrc": "^3.3.1",
+        "@eslint/js": "^9.32.0",
+        "@types/react": "^19.0.1",
+        "@types/react-dom": "^19.0.2",
+        "eslint": "^9.32.0",
+        "typescript": "5.9.2"
+    }
 }

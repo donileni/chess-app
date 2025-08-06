@@ -1,6 +1,6 @@
 {
-  "extends": "@chess-app/typescript-config/vite.json",
-  "compilerOptions": {
-    "jsx": "react-jsx"
-  }
+    "extends": "@chess-app/typescript-config/vite.json",
+    "compilerOptions": {
+        "jsx": "react-jsx"
+    }
 }
