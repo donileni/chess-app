@@ -1,6 +1,5 @@
 {
   "extends": "@chess-app/typescript-config/vite.json",
-  "include": ["src"],
   "compilerOptions": {
     "jsx": "react-jsx"
   }
