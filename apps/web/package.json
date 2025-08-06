@@ -11,19 +11,20 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.1.1",
+    "react-chessboard": "^5.2.2",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@chess-app/eslint-config": "workspace:*",
     "@chess-app/typescript-config": "workspace:*",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.32.0",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "@vitejs/plugin-react": "^3.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^9.32.0",
     "typescript": "5.5.4",
-    "vite": "^5.1.4"
+    "vite": "^7.0.6"
   }
 }
