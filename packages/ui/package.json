@@ -16,11 +16,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
     "@chess-app/eslint-config": "workspace:*",
     "@chess-app/typescript-config": "workspace:*",
-    "eslint": "^8.57.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.32.0",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.32.0",
     "typescript": "5.5.4"
   }
 }
