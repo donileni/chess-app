@@ -41,12 +41,12 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      "@chess-app/eslint-config":
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       "@chess-app/typescript-config":
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      "@repo/eslint-config":
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
       "@types/react":
         specifier: ^19.0.1
         version: 19.1.0
@@ -89,12 +89,12 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      "@chess-app/eslint-config":
+        specifier: workspace:*
+        version: link:../eslint-config
       "@chess-app/typescript-config":
         specifier: workspace:*
         version: link:../typescript-config
-      "@repo/eslint-config":
-        specifier: workspace:*
-        version: link:../eslint-config
       "@types/react":
         specifier: ^19.0.1
         version: 19.1.0

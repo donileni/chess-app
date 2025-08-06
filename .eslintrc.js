@@ -1,5 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  extends: ["./packages/eslint-config/index.js"],
+  extends: ["@chess-app/eslint-config/index.js"],
 };

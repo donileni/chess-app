@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@chess-app/eslint-config": "workspace:*",
     "@chess-app/typescript-config": "workspace:*",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
