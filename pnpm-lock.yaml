@@ -75,8 +75,8 @@ importers:
         specifier: ^9.32.0
         version: 9.32.0
       typescript:
-        specifier: 5.5.4
-        version: 5.5.4
+        specifier: 5.9.2
+        version: 5.9.2
       vite:
         specifier: ^7.0.6
         version: 7.0.6
@@ -126,8 +126,8 @@ importers:
         specifier: ^9.32.0
         version: 9.32.0
       typescript:
-        specifier: 5.5.4
-        version: 5.5.4
+        specifier: 5.9.2
+        version: 5.9.2
 
 packages:
   /@ampproject/remapping@2.3.0:
@@ -3664,14 +3664,6 @@ packages:
     engines: { node: ">= 0.8.0" }
     dependencies:
       prelude-ls: 1.2.1
-
-  /typescript@5.5.4:
-    resolution:
-      {
-        integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==,
-      }
-    engines: { node: ">=14.17" }
-    dev: true
 
   /typescript@5.9.2:
     resolution:
