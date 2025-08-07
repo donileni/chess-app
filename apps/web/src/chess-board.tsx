@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { Chessboard } from "react-chessboard";
-import Engine from "./providers/engine";
 import { ChessComService } from "@chess-app/chess";
+import Engine from "@/providers/engine";
 
 const DEFAULT_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 
