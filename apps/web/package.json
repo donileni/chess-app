@@ -11,6 +11,8 @@
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
+        "@tanstack/react-router": "^1.130.12",
+        "@tanstack/react-router-devtools": "^1.130.13",
         "react": "^19.1.1",
         "react-chessboard": "^5.2.2",
         "react-dom": "^19.1.1"
@@ -20,11 +22,13 @@
         "@chess-app/typescript-config": "workspace:*",
         "@eslint/eslintrc": "^3.3.1",
         "@eslint/js": "^9.32.0",
+        "@tanstack/router-plugin": "^1.130.15",
         "@types/react": "^19.1.9",
         "@types/react-dom": "^19.1.7",
         "@vitejs/plugin-react": "^4.7.0",
         "eslint": "^9.32.0",
         "typescript": "5.9.2",
-        "vite": "^7.0.6"
+        "vite": "^7.0.6",
+        "vite-tsconfig-paths": "^5.1.4"
     }
 }
