@@ -1,5 +1,5 @@
+import { ChessBoard } from "@/chess-board";
 import { createFileRoute } from "@tanstack/react-router";
-import { ChessBoard } from "../../chess-board";
 
 export const Route = createFileRoute("/")({
     component: Index,
