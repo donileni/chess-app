@@ -1,5 +1,5 @@
 {
-    "name": "@chess-app/chess",
+    "name": "@chess-app/common",
     "version": "1.0.0",
     "license": "MIT",
     "type": "module",
@@ -11,14 +11,12 @@
     "devDependencies": {
         "@chess-app/eslint-config": "workspace:*",
         "@chess-app/typescript-config": "workspace:*",
-        "@mliebelt/pgn-parser": "^1.4.18",
         "@types/node": "^24.2.0",
         "eslint": "^9.32.0",
         "typescript": "5.9.2"
     },
     "dependencies": {
         "@banjoanton/utils": "^1.1.8",
-        "@chess-app/common": "workspace:*",
         "zod": "^4.0.15"
     }
 }
