@@ -1,0 +1,4 @@
+{
+    "extends": "@chess-app/typescript-config/library.json",
+    "exclude": ["node_modules"]
+}

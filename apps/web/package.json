@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@repo/ui": "workspace:*",
+        "@chess-app/chess": "workspace:*",
         "@tanstack/react-router": "^1.130.12",
         "@tanstack/react-router-devtools": "^1.130.13",
         "react": "^19.1.1",
