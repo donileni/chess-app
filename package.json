@@ -8,12 +8,8 @@
         "postinstall": "hoks --init"
     },
     "devDependencies": {
-        "@eslint/eslintrc": "^3.3.1",
-        "@eslint/js": "^9.32.0",
-        "@typescript-eslint/eslint-plugin": "^8.39.0",
-        "@typescript-eslint/parser": "^8.39.0",
+        "@chess-app/eslint-config": "workspace:*",
         "eslint": "^9.32.0",
-        "eslint-config-prettier": "^9.1.0",
         "hoks": "^0.1.22",
         "prettier": "^3.5.3",
         "turbo": "^2.5.5"
