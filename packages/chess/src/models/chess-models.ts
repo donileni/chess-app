@@ -28,6 +28,9 @@ export const ChessPlayerSchema = z.object({
     externalAnalysis: ChessPlayerAnalysisSchema.optional(),
 });
 
+export const ChessGameSource = ["chess.com", "lichess"] as const;
+export type ChessGameSource = (typeof ChessGameSource)[number];
+
 export const ChessGameSchema = z
     .object({
         url: z.string().optional(),
@@ -37,6 +40,7 @@ export const ChessGameSchema = z
         rated: z.boolean(),
         initialFen: z.string(),
         rules: z.string(),
+        source: z.enum(ChessGameSource),
         white: ChessPlayerSchema,
         black: ChessPlayerSchema,
     })
@@ -61,6 +65,7 @@ const fromChessCom = (game: ChessComGame): ChessGame => ({
     timeControl: game.time_control,
     url: game.url,
     meta: game.meta,
+    source: "chess.com",
     black: {
         username: game.black.username,
         rating: game.black.rating,
