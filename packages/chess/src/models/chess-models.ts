@@ -39,6 +39,7 @@ export const ChessGameSchema = z
         endTimeUnix: z.number(),
         rated: z.boolean(),
         initialFen: z.string(),
+        finalFen: z.string(),
         rules: z.string(),
         source: z.enum(ChessGameSource),
         white: ChessPlayerSchema,
@@ -59,6 +60,7 @@ const from = (game: ChessGame) => game;
 const fromChessCom = (game: ChessComGame): ChessGame => ({
     endTimeUnix: game.end_time,
     initialFen: game.initial_setup,
+    finalFen: game.fen,
     pgn: game.pgn,
     rated: game.rated,
     rules: game.rules,
