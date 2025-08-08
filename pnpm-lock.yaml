@@ -120,9 +120,15 @@ importers:
             "@banjoanton/utils":
                 specifier: ^1.1.8
                 version: 1.1.8
+            pino:
+                specifier: ^9.8.0
+                version: 9.8.0
             zod:
                 specifier: ^4.0.15
                 version: 4.0.15
+            zod-validation-error:
+                specifier: ^4.0.1
+                version: 4.0.1(zod@4.0.15)
         devDependencies:
             "@chess-app/eslint-config":
                 specifier: workspace:*
@@ -1550,6 +1556,13 @@ packages:
             }
         engines: { node: ">= 0.4" }
 
+    atomic-sleep@1.0.0:
+        resolution:
+            {
+                integrity: sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==,
+            }
+        engines: { node: ">=8.0.0" }
+
     available-typed-arrays@1.0.7:
         resolution:
             {
@@ -2160,6 +2173,13 @@ packages:
             {
                 integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==,
             }
+
+    fast-redact@3.5.0:
+        resolution:
+            {
+                integrity: sha512-dwsoQlS7h9hMeYUq1W++23NDcBLV4KqONnITDV9DjfS3q1SgDGVrBdvvTLUotWtPSD7asWDV9/CmsZPy8Hf70A==,
+            }
+        engines: { node: ">=6" }
 
     fastq@1.19.1:
         resolution:
@@ -3028,6 +3048,13 @@ packages:
                 integrity: sha512-TBu7PtV8YkAZn0tSxobKY2n2aAQva936lhRrj6957aDaCf9IEtqsKbgMzXE/F/sjqYOwmrukeORHNLe5glk7Cg==,
             }
 
+    on-exit-leak-free@2.1.2:
+        resolution:
+            {
+                integrity: sha512-0eJJY6hXLGf1udHwfNftBqH+g73EU4B504nZeKpz1sYRKafAghwxEJunB2O7rDZkL4PGfsMVnTXZ2EjibbqcsA==,
+            }
+        engines: { node: ">=14.0.0" }
+
     onetime@5.1.2:
         resolution:
             {
@@ -3184,6 +3211,25 @@ packages:
             }
         engines: { node: ">=12" }
 
+    pino-abstract-transport@2.0.0:
+        resolution:
+            {
+                integrity: sha512-F63x5tizV6WCh4R6RHyi2Ml+M70DNRXt/+HANowMflpgGFMAym/VKm6G7ZOQRjqN7XbGxK1Lg9t6ZrtzOaivMw==,
+            }
+
+    pino-std-serializers@7.0.0:
+        resolution:
+            {
+                integrity: sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==,
+            }
+
+    pino@9.8.0:
+        resolution:
+            {
+                integrity: sha512-L5+rV1wL7vGAcxXP7sPpN5lrJ07Piruka6ArXr7EWBXxdVWjJshGVX8suFsiusJVcGKDGUFfbgbnKdg+VAC+0g==,
+            }
+        hasBin: true
+
     possible-typed-array-names@1.1.0:
         resolution:
             {
@@ -3220,6 +3266,12 @@ packages:
         engines: { node: ">=14" }
         hasBin: true
 
+    process-warning@5.0.0:
+        resolution:
+            {
+                integrity: sha512-a39t9ApHNx2L4+HBnQKqxxHNs1r7KF+Intd8Q/g1bUh6q0WIp9voPXJ/x0j+ZL45KF1pJd9+q2jLIRMfvEshkA==,
+            }
+
     prompts@2.4.2:
         resolution:
             {
@@ -3244,6 +3296,12 @@ packages:
         resolution:
             {
                 integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==,
+            }
+
+    quick-format-unescaped@4.0.4:
+        resolution:
+            {
+                integrity: sha512-tYC1Q1hgyRuHgloV/YXs2w15unPVh8qfu/qCTfhTYamaw7fyhumKa2yGpdSo87vY32rIclj+4fWYQXUMs9EHvg==,
             }
 
     react-chessboard@5.2.2:
@@ -3312,6 +3370,13 @@ packages:
                 integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==,
             }
         engines: { node: ">=8.10.0" }
+
+    real-require@0.2.0:
+        resolution:
+            {
+                integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==,
+            }
+        engines: { node: ">= 12.13.0" }
 
     recast@0.23.11:
         resolution:
@@ -3408,6 +3473,13 @@ packages:
                 integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==,
             }
         engines: { node: ">= 0.4" }
+
+    safe-stable-stringify@2.5.0:
+        resolution:
+            {
+                integrity: sha512-b3rppTKm9T+PsVCBEOUR46GWI7fdOs00VKZ1+9c1EWDaDMvjQc6tUwuFyIprgGgTcWoVHSKrU8H31ZHA2e0RHA==,
+            }
+        engines: { node: ">=10" }
 
     scheduler@0.23.2:
         resolution:
@@ -3565,6 +3637,12 @@ packages:
                 integrity: sha512-zF9Whfqk+s8wWuyDKnE7ekl+dJburjdZq54O6X1k4XChA57uZ5FOauYAa0s4I44XkBOM3CZmPrZC0DGjH9fKjQ==,
             }
 
+    sonic-boom@4.2.0:
+        resolution:
+            {
+                integrity: sha512-INb7TM37/mAcsGmc9hyyI6+QR3rR1zVRu36B0NeGXKnOOLiZOfER5SA+N7X7k3yUYRzLWafduTDvJAfDswwEww==,
+            }
+
     source-map-js@1.2.1:
         resolution:
             {
@@ -3585,6 +3663,13 @@ packages:
                 integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==,
             }
         engines: { node: ">= 12" }
+
+    split2@4.2.0:
+        resolution:
+            {
+                integrity: sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==,
+            }
+        engines: { node: ">= 10.x" }
 
     staged-git-files@1.3.0:
         resolution:
@@ -3688,6 +3773,12 @@ packages:
                 integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==,
             }
         engines: { node: ^14.18.0 || >=16.0.0 }
+
+    thread-stream@3.1.0:
+        resolution:
+            {
+                integrity: sha512-OqyPZ9u96VohAyMfJykzmivOrY2wfMSf3C5TtFJVgN+Hm6aj+voFhlK+kZEIv2FBh1X6Xp3DlnCOfEQ3B2J86A==,
+            }
 
     throttle-debounce@5.0.2:
         resolution:
@@ -4112,6 +4203,15 @@ packages:
                 integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==,
             }
         engines: { node: ">=12.20" }
+
+    zod-validation-error@4.0.1:
+        resolution:
+            {
+                integrity: sha512-F3rdaCOHs5ViJ5YTz5zzRtfkQdMdIeKudJAoxy7yB/2ZMEHw73lmCAcQw11r7++20MyGl4WV59EVh7A9rNAyog==,
+            }
+        engines: { node: ">=18.0.0" }
+        peerDependencies:
+            zod: ^3.25.0 || ^4.0.0
 
     zod@3.25.76:
         resolution:
@@ -5034,6 +5134,8 @@ snapshots:
 
     async-function@1.0.0: {}
 
+    atomic-sleep@1.0.0: {}
+
     available-typed-arrays@1.0.7:
         dependencies:
             possible-typed-array-names: 1.1.0
@@ -5546,6 +5648,8 @@ snapshots:
 
     fast-levenshtein@2.0.6: {}
 
+    fast-redact@3.5.0: {}
+
     fastq@1.19.1:
         dependencies:
             reusify: 1.1.0
@@ -6043,6 +6147,8 @@ snapshots:
 
     ohash@1.1.6: {}
 
+    on-exit-leak-free@2.1.2: {}
+
     onetime@5.1.2:
         dependencies:
             mimic-fn: 2.1.0
@@ -6138,6 +6244,26 @@ snapshots:
 
     picomatch@4.0.3: {}
 
+    pino-abstract-transport@2.0.0:
+        dependencies:
+            split2: 4.2.0
+
+    pino-std-serializers@7.0.0: {}
+
+    pino@9.8.0:
+        dependencies:
+            atomic-sleep: 1.0.0
+            fast-redact: 3.5.0
+            on-exit-leak-free: 2.1.2
+            pino-abstract-transport: 2.0.0
+            pino-std-serializers: 7.0.0
+            process-warning: 5.0.0
+            quick-format-unescaped: 4.0.4
+            real-require: 0.2.0
+            safe-stable-stringify: 2.5.0
+            sonic-boom: 4.2.0
+            thread-stream: 3.1.0
+
     possible-typed-array-names@1.1.0: {}
 
     postcss@8.5.6:
@@ -6154,6 +6280,8 @@ snapshots:
 
     prettier@3.6.2: {}
 
+    process-warning@5.0.0: {}
+
     prompts@2.4.2:
         dependencies:
             kleur: 3.0.3
@@ -6168,6 +6296,8 @@ snapshots:
     punycode@2.3.1: {}
 
     queue-microtask@1.2.3: {}
+
+    quick-format-unescaped@4.0.4: {}
 
     react-chessboard@5.2.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
         dependencies:
@@ -6206,6 +6336,8 @@ snapshots:
     readdirp@3.6.0:
         dependencies:
             picomatch: 2.3.1
+
+    real-require@0.2.0: {}
 
     recast@0.23.11:
         dependencies:
@@ -6302,6 +6434,8 @@ snapshots:
             call-bound: 1.0.4
             es-errors: 1.3.0
             is-regex: 1.2.1
+
+    safe-stable-stringify@2.5.0: {}
 
     scheduler@0.23.2:
         dependencies:
@@ -6402,11 +6536,17 @@ snapshots:
             seroval: 1.3.2
             seroval-plugins: 1.3.2(seroval@1.3.2)
 
+    sonic-boom@4.2.0:
+        dependencies:
+            atomic-sleep: 1.0.0
+
     source-map-js@1.2.1: {}
 
     source-map@0.6.1: {}
 
     source-map@0.7.6: {}
+
+    split2@4.2.0: {}
 
     staged-git-files@1.3.0: {}
 
@@ -6484,6 +6624,10 @@ snapshots:
     synckit@0.11.11:
         dependencies:
             "@pkgr/core": 0.2.9
+
+    thread-stream@3.1.0:
+        dependencies:
+            real-require: 0.2.0
 
     throttle-debounce@5.0.2: {}
 
@@ -6737,6 +6881,10 @@ snapshots:
     yocto-queue@0.1.0: {}
 
     yocto-queue@1.2.1: {}
+
+    zod-validation-error@4.0.1(zod@4.0.15):
+        dependencies:
+            zod: 4.0.15
 
     zod@3.25.76: {}
 

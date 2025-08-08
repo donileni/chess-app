@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "@banjoanton/utils": "^1.1.8",
-        "zod": "^4.0.15"
+        "pino": "^9.8.0",
+        "zod": "^4.0.15",
+        "zod-validation-error": "^4.0.1"
     }
 }
