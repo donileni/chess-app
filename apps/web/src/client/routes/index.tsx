@@ -1,6 +1,5 @@
 import { ChessBoard } from "@/chess-board";
 import { createFileRoute } from "@tanstack/react-router";
-import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
     component: Index,
@@ -8,10 +7,11 @@ export const Route = createFileRoute("/")({
 
 function Index() {
     return (
-        <>
-            <div>Welcome to homepage "/"!</div>
-            <ChessBoard />
-            <Button style={{ margin: 10 }}>click me</Button>
-        </>
+        <div>
+            <div className="m-2">Welcome to homepage "/"!</div>
+            <div className="m-2">
+                <ChessBoard />
+            </div>
+        </div>
     );
 }
