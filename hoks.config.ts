@@ -7,8 +7,5 @@ export default defineConfig({
         message:
             "Branch name must start with 'feature/', 'bugfix/', 'hotfix/', 'release/'",
     },
-    staged: {
-        "*": "npm run format",
-    },
     enforceConventionalCommits: true,
 });
