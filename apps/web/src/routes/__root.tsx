@@ -13,7 +13,7 @@ const RootComponent = () => {
             <Header>
                 <Outlet />
             </Header>
-            {isDev ? <TanStackRouterDevtools /> : null}
+            {isDev ? <TanStackRouterDevtools position="bottom-right" /> : null}
         </SidebarProvider>
     );
 };

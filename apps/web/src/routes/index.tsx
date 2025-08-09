@@ -1,8 +1,11 @@
-import { ChessBoard } from "@/chess-board";
-import { createFileRoute } from "@tanstack/react-router";
+import { ChessBoard } from "@/components/chess/chess-board";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
     component: Index,
+    loader: async () => {
+        throw redirect({ to: "/overview" });
+    },
 });
 
 function Index() {

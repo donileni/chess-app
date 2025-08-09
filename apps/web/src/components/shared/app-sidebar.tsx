@@ -2,11 +2,11 @@ import {
     BookOpen,
     ChartNoAxesCombined,
     ChevronUp,
+    Gamepad2,
     Home,
     Import,
     Settings,
     User2,
-    Users,
 } from "lucide-react";
 
 import {
@@ -27,36 +27,37 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "@tanstack/react-router";
 
 const items = [
     {
         title: "Overview",
-        url: "#",
+        url: "/overview",
         icon: Home,
     },
     {
+        title: "Games",
+        url: "/games",
+        icon: Gamepad2,
+    },
+    {
         title: "Analyze",
-        url: "#",
+        url: "/analyze",
         icon: ChartNoAxesCombined,
     },
     {
         title: "Import",
-        url: "#",
+        url: "/import",
         icon: Import,
     },
     {
         title: "Study",
-        url: "#",
+        url: "/study",
         icon: BookOpen,
     },
     {
-        title: "Friends",
-        url: "#",
-        icon: Users,
-    },
-    {
         title: "Settings",
-        url: "#",
+        url: "/settings",
         icon: Settings,
     },
 ];
@@ -76,10 +77,10 @@ export function AppSidebar() {
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton asChild>
-                                        <a href={item.url}>
+                                        <Link to={item.url}>
                                             <item.icon />
                                             <span>{item.title}</span>
-                                        </a>
+                                        </Link>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
                             ))}
