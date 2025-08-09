@@ -1,10 +1,11 @@
 import { createRoot } from "react-dom/client";
-import { createRouter, RouterProvider } from "@tanstack/react-router";
-import { routeTree } from "@/client/routeTree.gen";
+import { createRouter, Navigate, RouterProvider } from "@tanstack/react-router";
 import "./style.css";
+import { routeTree } from "@/routeTree.gen";
 
 const router = createRouter({
     routeTree,
+    defaultNotFoundComponent: () => <Navigate to="/overview" />,
 });
 
 declare module "@tanstack/react-router" {
